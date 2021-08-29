@@ -1,0 +1,25 @@
+baseURL = "https://example.com"
+title = "roots"
+author = "none"
+copyright = "Copyright © 2020, none; all rights reserved."
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+
+theme="roots"
+
+enableGitInfo=true
+enableEmoji= true
+enableRobotsTXT= true
+
+# Syntax Highlight Options
+pygmentsCodeFencesGuessSyntax = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+pygmentsStyle = "vs"
+[pygmentsOptions]
+  linenos= true
+
+[markup]
+  defaultMarkdownHandler= "goldmark"
