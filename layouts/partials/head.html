@@ -16,8 +16,7 @@ path.Base .p1.RelPermalink -}}{{- end -}}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{if .IsPage }} {{.Title}} {{else}}{{ template "title" (dict "p1" . "p2" .) }} {{end}}- {{ .Site.Title -}}
-    </title>
+    <title>{{ template "title" (dict "p1" . "p2" .) }}</title>
     <meta name="description" content="{{ $description }}">
     <link rel="canonical" href="{{ .Permalink }}">
     <meta property="og:title" content="{{ .Title }}">

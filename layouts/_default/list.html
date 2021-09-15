@@ -2,7 +2,7 @@
 <section class="content item-list">
     {{if and (not .IsHome) .Parent }}
     <div class="item">
-        <ion-icon name="arrow-undo-sharp"></ion-icon>&nbsp;<a title="{{.Parent.Title}}"
+        <ion-icon name="arrow-undo-outline"></ion-icon>&nbsp;<a title="{{.Parent.Title}}"
             href="{{.Parent.Permalink}}">../</a>
     </div>
     {{ end }}
@@ -14,7 +14,7 @@
             {{ else if eq .Kind "term"}}
             <ion-icon name="bookmarks-outline"></ion-icon>&nbsp;
             {{ else }}
-            <ion-icon name="folder-outline"></ion-icon>&nbsp;
+            <ion-icon name="folder-open-outline"></ion-icon>&nbsp;
             {{ end }}
             <a title="{{ .Title }}" href="{{ .Permalink }}">
                 {{ $item := . }}
